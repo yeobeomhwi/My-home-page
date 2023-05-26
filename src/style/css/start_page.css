@@ -58,35 +58,6 @@ body {
     height: 100vh;
 }
 
-/* 네비게이션 바 */
-.nav_bar {
-    display: flex;
-    flex: 1;
-    order: 0;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0;
-    gap: 64px;
-
-    top: 52px;
-}
-
-.nav_1 {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 26px;
-    color: #FFFFFF;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-
-.nav_1.active {
-    color: #F6490D; /* 활성 링크 색상 */
-}
-
 /* 버튼 스타일 */
 .custom-btn {
     color: #fff;

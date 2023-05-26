@@ -5,106 +5,11 @@ html, body {
     padding: 0;
 }
 
-body {
-    background-color: #15161A;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
-    gap: 24px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-/* 네비게이션 바 */
-.nav_bar {
-    display: flex;
-    flex: 1;
-    order: 0;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0;
-    gap: 64px;
 
-    top: 52px;
+.home_content{
+    background:#ac34f2;
+}
+#box{
+    height:4000px;
 }
 
-
-.nav_1 {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 26px;
-    color: #FFFFFF;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-
-.nav_1.active {
-    color: #F6490D; /* 활성 링크 색상 */
-}
-
-/* Main */
-.main_container {
-    display: flex;
-    order: 2;
-    background-color: aqua;
-    width: 100%;
-    height: 100%;
-}
-
-/* Footer */
-.footer {
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 0px;
-    gap: 24px;
-    width: 100%;
-    min-height: 228px;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 3;
-    flex-grow: 0;
-    z-index: 1;
-}
-
-.footer_span1 {
-    width: 226px;
-    height: 24px;
-
-    /* Heading/Regular/M */
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    /* identical to box height, or 133% */
-    text-align: center;
-    /* Adaptive/Weak */
-    color: rgba(255, 255, 255, 0.6);
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.footer_span2 {
-    width: 154px;
-    height: 20px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.6);
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
