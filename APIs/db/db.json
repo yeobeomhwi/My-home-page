@@ -1,0 +1,68 @@
+{
+  "files": [
+    {
+      "id": "1",
+      "name": "내컴퓨터",
+      "type": "DIRECTORY",
+      "filePath": null,
+      "parent": null
+    },
+    {
+      "id": "2",
+      "name": "바탕화면",
+      "type": "DIRECTORY",
+      "filePath": null,
+      "parent": null
+    },
+    {
+      "id": "3",
+      "name": "폴더_3",
+      "type": "DIRECTORY",
+      "filePath": null,
+      "parent": null
+    },
+    {
+      "id": "4",
+      "name": "폴더_4",
+      "type": "DIRECTORY",
+      "filePath": null,
+      "parent": null
+    },
+    {
+      "id": "5",
+      "name": "폴더_5",
+      "type": "DIRECTORY",
+      "filePath": null,
+      "parent": {
+        "id": "1"
+      }
+    },
+    {
+      "id": "6",
+      "name": "폴더_6",
+      "type": "DIRECTORY",
+      "filePath": null,
+      "parent": {
+        "id": "1"
+      }
+    },
+    {
+      "id": "7",
+      "name": "폴더_7",
+      "type": "DIRECTORY",
+      "filePath": null,
+      "parent": {
+        "id": "1"
+      }
+    },
+    {
+      "id": "8",
+      "name": "폴더_8",
+      "type": "DIRECTORY",
+      "filePath": null,
+      "parent": {
+        "id": "1"
+      }
+    }
+  ]
+}

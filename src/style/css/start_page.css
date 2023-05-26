@@ -6,16 +6,16 @@ html, body {
 }
 
 body {
-    overflow: hidden;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
-    gap: 24px;
     background: radial-gradient(94.12% 94.12% at 51.76% 0%, #8504EA 0%, rgba(66, 0, 255, 0) 100%),
                 radial-gradient(81.74% 279.79% at 96.64% 90.57%, #CA6821 0%, rgba(186, 5, 202, 0) 100%),
                 radial-gradient(63.69% 245.54% at 12.6% 84.38%, #1C00A4 0%, rgba(83, 51, 237, 0) 100%),
                 #000588;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    gap: 24px;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -52,25 +52,25 @@ body {
 /* 컨테이너 */
 .container {
     display: flex;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 
 /* 버튼 스타일 */
 .custom-btn {
+    display: inline-block;
+    position: relative;
+    background: transparent;
     color: #fff;
     border-radius: 5px;
     padding: 10px 25px;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 500;
-    background: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
     box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
                 7px 7px 20px 0px rgba(0,0,0,.1),
                 4px 4px 5px 0px rgba(0,0,0,.1);
@@ -82,35 +82,35 @@ body {
 
 /* 버튼 3 */
 .btn-3 {
-    background: rgb(0,172,238);
-    background: linear-gradient(0deg, rgb(232, 232, 232) 0%, rgba(93, 93, 93, 0.072) 100%);
     width: 160px; /* 크기 조정 */
     height: 50px; /* 크기 조정 */
+    background: rgb(0,172,238);
+    background: linear-gradient(0deg, rgb(232, 232, 232) 0%, rgba(93, 93, 93, 0.072) 100%);
     line-height: 50px; /* 버튼 내 텍스트 수직 정렬 */ 
     padding: 0;
     border: none;
 }
 
 .btn-3 span {
-    position: relative;
     display: block;
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .btn-3:before,
 .btn-3:after {
-    position: absolute;
-    content: "";
-    right: 0;
     top: 0;
+    right: 0;
+    position: absolute;
     background: rgba(2,126,251,1);
+    content: "";
     transition: all 0.3s ease;
 }
 
 .btn-3:before {
-    height: 0%;
     width: 2px;
+    height: 0%;
 }
 
 .btn-3:after {
@@ -137,11 +137,11 @@ body {
 
 .btn-3 span:before,
 .btn-3 span:after {
-    position: absolute;
-    content: "";
-    left: 0;
     bottom: 0;
+    left: 0;
+    position: absolute;
     background: rgba(2,126,251,1);
+    content: "";
     transition: all 0.3s ease;
 }
 
