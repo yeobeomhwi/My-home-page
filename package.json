@@ -1,20 +1,21 @@
 {
-  "name": "my-home-page",
+  "name": "html",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./APIs/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "lodash-id": "^0.14.0",
     "lowdb": "^1.0.0",
+    "mysql": "^2.18.1",
     "nodemon": "^2.0.7"
   },
   "author": "",
-  "license": "ISC",
-  "devDependencies": {},
-  "description": ""
+  "license": "ISC"
 }
