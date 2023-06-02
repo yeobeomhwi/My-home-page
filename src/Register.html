@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>회원가입</title>
+</head>
+
+<body>
+    <h1>회원가입</h1>
+    <form id="signup-form">
+        <label for="username">사용자명:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password">비밀번호:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <input type="submit" value="회원가입">
+    </form>
+
+    <script>
+        const form = document.getElementById('signup-form');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            const data = {
+                username: username,
+                password: password
+            };
+
+            fetch('http://localhost:3000/signup', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+                .then(response => response.json())
+                .then(result => {
+                    console.log(result);
+                    alert(result.message);
+                })
+                .catch(error => {
+                    console.error(error);
+                    alert('회원가입에 실패했습니다.');
+                });
+        });
+    </script>
+</body>
+
+</html>
